@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON Test</title>
+</head>
+
+<body>
+    <div id="myData"></div>
+
+    <script>
+
+        var url = "https://api.nasa.gov/planetary/apod?api_key=L0OJs7oDz2zUWKWzCpYFwYuggr5eEzlOjgTK4Pxg";
+        fetch(url)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+                console.log(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        //Show data
+        function appendData(data) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Title: ' + data[i].title + ' ' + data[i].copyright;
+                mainContainer.appendChild(div);
+            }
+        }
+    </script>
+</body>
+
+</html>
