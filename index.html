@@ -9,10 +9,14 @@
 </head>
 
 <body>
-    <div id="myData"></div>
+    <!-- mainContainer -->
+    <div id="myData">
+        <span id="title"></span>
+        <img src="" width=500 height=400 alt="apod" id="img">
+    </div>
 
     <script>
-
+        //modify url to hit other endpoints 
         var url = "https://api.nasa.gov/planetary/apod?api_key=L0OJs7oDz2zUWKWzCpYFwYuggr5eEzlOjgTK4Pxg";
         fetch(url)
             .then(function (response) {
@@ -20,7 +24,7 @@
             })
             .then(function (data) {
                 appendData(data);
-                console.log(data);
+
             })
             .catch(function (err) {
                 console.log('error: ' + err);
@@ -28,12 +32,19 @@
 
         //Show data
         function appendData(data) {
-            var mainContainer = document.getElementById("myData");
-            for (var i = 0; i < data.length; i++) {
-                var div = document.createElement("div");
-                div.innerHTML = 'Title: ' + data[i].title + ' ' + data[i].copyright;
-                mainContainer.appendChild(div);
-            }
+            console.log(data)
+
+            // var response = JSON.parse(req.responseText);
+            var mainContainer = document.getElementById("title");
+            document.querySelector("#img").setAttribute("src", data.url)
+            mainContainer.textContent = data.title;
+            // for (var i = 0; i < data.length; i++) {
+
+
+            // document.getElementById("title").textContent = response.title;
+            // mainContainer.appendChild(div);
+            // }
+
         }
     </script>
 </body>
