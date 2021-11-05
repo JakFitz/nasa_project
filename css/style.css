@@ -6,12 +6,20 @@
 /* html styling */
   html, body {
     height: 100%;
-    background-color: rgb(226, 225, 213);
+    overflow: hidden;
   }
+
+  body {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(to bottom, #6e529d 0%,#d97b93 100%);
+  }
+
 /* position of the camera's name */
   #cameraname {
       position: absolute;
-      left: 80vh;
+      left: 90vh;
       top: 10vh;
   }
 /* styling for navbar */
@@ -37,11 +45,20 @@
 .roverlinks a:hover {
     background-color: black;
 }
+
+.navtitle {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+}
 /* styling for calender and dropdown div */
 .camerabar {
     background-color: rgb(63, 61, 61);
-    height: 92.5%;
-    width: 25%;
+    height: 92.8%;
+    max-width: 25%;
     border-style: solid;
     border-right-color: grey;
 }
@@ -53,7 +70,7 @@
     height: 45vh;
 }
 
-#srchbtn {
+#submit {
     background-color: rgb(63, 61, 61);
     border-style: solid;
     border-color: grey;
@@ -65,7 +82,7 @@
     font-size: 16px;
 }
 
-#srchbtn:hover {
+#submit:hover {
     background-color: black;
 }
 
@@ -90,11 +107,17 @@
 }
 /* styling for the div which will house the camera */
 .picturebox {
-    border-style: solid;
-    border-color: blue;
-    width: 400px;
+
+    width: 500px;
     height: 400px;
     position: absolute;
     right: 30%;
     bottom: 25%;
+}
+
+#myData {
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 5px 20px 1px;
+    border-radius: .4em;
 }
