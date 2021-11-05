@@ -4,17 +4,25 @@ var photoCount = document.querySelector("phoCnt");
 var select = document.querySelector("#cameraId");
 var photoSelect = document.querySelector("#photoSelect");
 var photos = [];
+var dateSel = "2015-09-05"
+
 
 console.log(camId);
 getPic();
 
-
-//function setCamVal() {
-    //var select = document.getElementById("cameraId");
-   // camId = select.options[select.selectedIndex].value;
-    //console.log(camId);
-   // getPic();
-//}
+$(function() {
+            $( "#my_date_picker" ).datepicker({
+                defaultDate:"2015-09-05",
+                dateFormat: "yy-mm-dd",
+                onSelect: function (evt, ui) {
+                    dayObj = ui;
+                    console.log(ui.selectedDay, ui.selectedMonth, ui.selectedYear)
+                    dateSel = `${ui.selectedYear}-${ui.selectedMonth+1}-${ui.selectedDay}`
+                    getPic()
+                }
+            
+            });
+        });
 
 function handleSelectChange(e){
     console.log(e.target.value);
@@ -32,7 +40,7 @@ function handlePhotoSelect(e){
 
 
 function getPic() {
-var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=" + camId +"&api_key=ueGl04f2AeAlKgT7JOzMv1onJoTXoF1zqrBidAQB";
+var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=" + dateSel + "&camera=" + camId +"&api_key=ueGl04f2AeAlKgT7JOzMv1onJoTXoF1zqrBidAQB";
         fetch(url)
             .then(function (response) {
                 return response.json();
@@ -69,8 +77,7 @@ var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1
         }
     }
 
-    
-//submit.addEventListener("click", setCamVal);
+
 select.addEventListener("change", handleSelectChange);
 photoSelect.addEventListener("input", handlePhotoSelect);
 
