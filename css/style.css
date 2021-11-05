@@ -61,32 +61,29 @@
     max-width: 25%;
     border-style: solid;
     border-right-color: grey;
+    overflow: hidden;
 }
 
 #calenderdiv {
-    border-style: solid;
-    border-color: white;
-    height: 150px;
-    width: 150px;
     position: relative;
-    left: 13vh;
-    top: 6vh;
+    left: 10%;
+    top: 30%;
+    color: white;
 }
 
 #dropdowndiv {
-    border-style: solid;
-    border-color: white;
-    height: 150px;
-    width: 150px;
     position: relative;
-    left: 13vh;
-    top: 25vh;
+    left: 10%;
+    top: 50%;
+    max-width: 80%;
 }
 /* styling for the div which will house the camera */
 .picturebox {
 
     max-width: 50%;
     max-height: 66%;
+    min-width: 350px;
+    min-height: 350px;
     position: relative;
     right: -34%;
     bottom: 75%;
@@ -105,7 +102,7 @@
     max-width: 700px;
     max-height: 500px;
 }
-
+/* css to make webpage mobile responsive */
 @media only screen and (max-width:992px) {
     div.camerabar {
         background: none;
@@ -113,11 +110,31 @@
     }
 
     #cameraname {
-        display: none;
+        display: inline-block;
+        position: relative;
+        left: 10%;
+        bottom: 90%;
     }
 
     .picturebox {
+        position: relative;
+        left: 27%;
+        bottom: 80%;
+    }
 
+    #img {
+        max-height: 375px;
+    }
+
+    .camerabar {
+        position: relative;
+        left: 40%;
+        bottom: -30%;
+    }
+
+    #dropdowndiv {
+        position: absolute;
+        bottom: -40%;
     }
 
 }
