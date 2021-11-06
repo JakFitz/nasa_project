@@ -18,7 +18,7 @@ Chris Felix - @cfelix777
 
 # Overview
 ---------------
-
+ For our group project, we elected to have the user be able to look up photos from 3 different Rovers: The Curiosity Rover, The Spirit Rover, and The Opportunity Rover. On our home screen, we allow the user to be able to choose the rover they would like to review either by selecting the tabs on the top of the page or clicking through to the desired rover. After picking the rover of your choice, the user can select the date and the camera angle of the date.
 
 # Requirements
 ---------------
@@ -52,5 +52,3 @@ https://mdbootstrap.com/freebies/carousel-full-cover/
 
 API
 https://api.nasa.gov/
-
-Application (Group-Project)
