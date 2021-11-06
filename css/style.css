@@ -77,6 +77,11 @@
     top: 50%;
     max-width: 80%;
 }
+
+#photoSelect {
+    width: 105%;
+}
+
 /* styling for the div which will house the camera */
 .picturebox {
 
@@ -131,6 +136,10 @@
     #dropdowndiv {
         position: absolute;
         bottom: -40%;
+    }
+
+    #instructions {
+        display: none;
     }
 
 }
