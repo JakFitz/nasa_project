@@ -1,74 +1,40 @@
-# Carousel full cover template for Bootstrap 5
+It's a bird, it's a plane,it's a ... Rover?
+Unit 07: Project 1 - 11/6/2021 - Saturday
+Nasa_Project - Group (GitHub page)
+Jack Fitzhugh - @JakFitz Dustin Smith - @interceptr83 Vahan Martirosyan - @scorpion77777 Chris Felix - @cfelix777
 
+Table of Contents
+Overview
+Requirements
+Links
+Overview
+For our group project, we elected to have the user be able to look up photos from 3 different Rovers: The Curiosity Rover, The Spirit Rover, and The Opportunity Rover. On our home screen, we allow the user to be able to choose the rover they would like to review either by selecting the tabs on the top of the page or clicking through to the desired rover. After picking the rover of your choice, the user can select the date and the camera angle of the date.
 
-These templates were built with a **free Material Design UI Kit for the latest Bootstrap 5**.
+Requirements
+Use a CSS framework other than Bootstrap.
 
-<img height="25" src="https://mdbootstrap.com/img/Marketing/general/logo/medium/mdb-r.png">  [![GitHub Stars](https://img.shields.io/github/stars/mdbootstrap/mdb-ui-kit?label=Star%20now&style=social)](https://github.com/mdbootstrap/mdb-ui-kit/)
+Be deployed to GitHub Pages.
 
-<a href="https://npmcharts.com/compare/mdbootstrap?minimal=true"> <img src="https://img.shields.io/npm/dm/mdbootstrap.svg?label=MDB%20Downloads" alt="Downloads"></a>
-<a href="https://github.com/mdbootstrap/bootstrap-material-design/blob/master/License.pdf"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
-<a href="https://twitter.com/intent/tweet/?text=Thanks+@mdbootstrap+for+creating+amazing+and+free+Material+Design+for+Bootstrap+4+UI+KIT%20https://mdbootstrap.com/docs/jquery/&hashtags=javascript,code,webdesign,bootstrap"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Let%20us%20know%20you%20were%20here%21&"></a>
-<a href="https://www.youtube.com/watch?v=c9B4TPnak1A&t=6s"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/c9B4TPnak1A?label=Bootstrap%205%20Tutorial%20Views&style=social"></a>
-___
+Be interactive (i.e., accept and respond to user input).
 
-<table>
-  <tbody>
-    <tr>
-      <td>
-          <a href="https://mdbootstrap.com/freebies/carousel-full-cover/" alt="Bootstrap 5" rel="dofollow">
-          		<img src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/freebies/carousel-full-cover/assets/featured.jpg">
-          </a>
-      </td>
-      <td>
-        <ul>
-        <li><b>Built with the free MDB5 UI Kit</b></li>
-         <li>Super simple, 1 minute implementation</li>
-         <li><b>Plain javascript (but works also with jQuery)</b></li>
-         <li>Use in your design and create amazing things</li>
-         <li><b>MIT license - free for personal & commercial use</b></li>
-          <li><b><a href="https://mdbootstrap.com/snippets/standard/mdbootstrap/2515519">Live Demo</a></b></li>
-        </ul>
-      </td>
-    </tr>
-   </tbody>
-</table>
+Use at least two server-side APIs.
 
+Does not use alerts, confirms, or prompts (use modals).
 
-___
+Use client-side storage to store persistent data.
 
-###### Discover tutorials for the latest Bootstrap 5 and learn how to create templates yourself.
+Be responsive.
 
-**[>> Click here for a written tutorial](https://mdbootstrap.com/docs/standard/getting-started/quick-start/)**
+Have a polished UI.
 
+Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-<table>
-  <tbody>
-    <tr>
-      <td align="center">
-          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/learnmore-1.png">
-          </a>
-      </td>
-      <td>
-          <a href="https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/#section-beginner" alt="Bootstrap 5" rel="dofollow">
-          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/cover-bootstrap-5-1.png">
-          </a>
-      </td>
-    </tr>
-     <tr>
-        <td align="center">
-          <p align="center"><b>Start to Code</b></p>
-          <a href="https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/#section-beginner" alt="Bootstrap 5" rel="dofollow">
-          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/Screenshot_26.png">
-          </a>
-         </td>
-        <td align="center">
-          <p align="center"><b>Learn Bootstrap 5 | Crash Course for Beginners in 1.5H</b></p>
-          <a href="https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/#section-beginner" alt="Bootstrap 5" rel="dofollow">
-          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/Screenshot_26.png">
-          </a>
-         </td>
-      </tr>
-   </tbody>
-</table>
+Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-___
+Links
+Date-Picker https://jqueryui.com/datepicker/
+
+Bootstrap https://mdbootstrap.com/freebies/carousel-full-cover/
+
+API https://api.nasa.gov/
+
